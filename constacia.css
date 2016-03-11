@@ -1,0 +1,84 @@
+*{margin:0;	padding:0;}
+a{ 
+	text-decoration:none;
+	color:white;
+	}
+#contenedor{ 
+	max-width:1190px;
+	margin:auto;}
+	/*header*/
+header{ 	
+	height: 100px;
+	width: 100%;
+	position:fixed;
+	z-index:9;
+	box-shadow:2px 4px 5px 2px gray;
+	background-color:#d9803a;
+	margin-top:-125px;
+	}
+.contacto{ 
+	float:right;
+	color: white; 
+	text-align:center;
+	padding:30px;
+	font-size:36px;
+}
+.logo{ 
+	float: left;
+	}	
+.title{ 
+	float: left;
+	margin-left:50px;
+}
+/*#CONTENIDO*/
+#contenido{ 
+/*	outline: 1px solid red;
+*/	width: 1190px;
+	margin:auto;
+	margin-top:125px;
+}
+
+/*.felicitacion*/
+.felicitacion{ 
+	height:105px;
+	max-width:1190px;
+	min-width:590px;
+
+		}
+.felicitacion img{ 
+/	overflow:hidden;
+	float:left;
+	margin-right: 1px;
+
+	}
+.mostrargrande{
+/*	width: 70%;
+*/	float:right;
+	-webkit-box-shadow:2px 4px 5px 2px gray;
+}
+/*.entrada*/
+.entrada{ 
+	background-color:silver;
+	-webkit-box-shadow:2px 4px 5px 2px gray;
+	padding: 30px;
+	color:gray;
+	width:23%;
+	float:left;
+}
+.entrada p{ 
+	font-size:20px;
+	margin-bottom:23px;
+	}
+#autor{ 
+/*	outline: 1px solid red;
+*/	width:35%;
+/*	margin-top:130px;
+*/	float:right;
+	padding:15px;
+	box-shadow:2px 4px 5px 2px gray;
+		background-color:#d9803a;
+	color: white;
+	margin-top:25px;
+
+	}
+

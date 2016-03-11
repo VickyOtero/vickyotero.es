@@ -1,0 +1,58 @@
+@charset "utf-8";
+*{margin:0;	padding:0;}
+a{ 
+	text-decoration:none;
+	color:white;
+	}
+#contenedor{ 
+	max-width:1190px;
+	margin:auto;}
+
+	/*header*/
+header{ 	
+/	height: 100px;
+	width: 100%;
+	position:fixed;
+	z-index:9;
+	box-shadow:2px 4px 5px 2px gray;
+	background-color:#801c41;
+	}
+.contacto{ 
+	float:right;
+	color: white; 
+	text-align:center;
+	padding:30px;
+	font-size:36px;
+/*	outline:1px solid red;
+*/}
+.logo{ 
+	float: left;
+	}	
+.title{ 
+	float: left;
+/*	outline:1px solid red;
+*/	margin-left:50px;
+}
+.title img{ 
+/*	outline:1px solid blue;
+*/	float:left;
+}
+#wowslider-container1{
+	top: 120px;
+	position:absolute;
+		-webkit-box-shadow:2px 4px 5px 2px gray !important;
+		border: 2px solid red;
+
+}
+#autor{ 
+/*	outline: 1px solid red;
+*/	width:35%;
+	margin-top:130px;
+	float:right;
+	padding:15px;
+	box-shadow:2px 4px 5px 2px gray;
+		background-color:#801c41;
+	color: white;
+
+
+	}

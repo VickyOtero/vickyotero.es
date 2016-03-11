@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>index_vicky otero</title>
+<link rel="shortcut icon" href="imagenes/Logo-Vicky-Otero_favicon.png"/>
+<link href="vickyotero.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js"></script>
+<script src="jquery.transform2d.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52526153-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+	$(document).ready(function() {
+//cookies
+	$('#cerrar-aviso').click(function(){
+    $('#cookies').hide('slow');
+});
+
+
+//vicky_calco	
+
+	var rutaoriginal;
+	var rutanueva;
+
+	$('#col_izda img').mouseenter( function(){
+		rutaoriginal = $(this).attr('src');
+		rutanueva = rutaoriginal.replace('.jpg','_calco.jpg');
+	$(this).attr('src',rutanueva);
+	})
+	$('#col_izda img').mouseleave( function(){
+	$(this).attr('src',rutaoriginal);
+	});
+	
+//aCtitudes
+
+	$('p.actitudes').mouseenter(function(){
+			$(this).css({'background':'#801c41'});
+			$('.contenido_3').animate({opacity:'1'});
+		});
+	
+	$('p.actitudes').mouseleave(function(){
+			$(this).css({'background':'white'});
+			$('.contenido_3').animate({opacity:'0.5'});
+		});
+	
+	$('.contenido_3').mouseenter(function(){
+			$(this).animate({opacity:'1'})
+			$('p.actitudes').css({'background':'#801c41'});
+		});
+		
+	$('.contenido_3').mouseleave(function(){
+			$(this).animate({opacity:'0.3'});
+			$('p.actitudes').css({'background':'white'});;
+		});
+		
+//aPtitudes
+
+	$('p.aptitudes').mouseenter(function(){
+			$(this).css({'background':'#801c41'});
+			$('.contenido_1').animate({opacity:'1'});
+		});
+
+	$('p.aptitudes').mouseleave(function(){
+			$(this).css({'background':'white'});;
+			$('.contenido_1').animate({opacity:'0.3'});
+		});
+		
+	$('.contenido_1').mouseenter(function(){
+			$(this).animate({opacity:'1'});
+			$('p.aptitudes').css({'background':'#801c41'});
+		});
+		
+	$('.contenido_1').mouseleave(function(){
+			$(this).animate({opacity:'0.3'});
+			$('p.aptitudes').css({'background':'white'});
+		});
+	
+//trabajos contenido 1-2-5-6
+
+	$('#trabajos div').mouseenter(function(){ 
+		$(this).find('img.arriba').stop().animate({top:-290},1000);
+		$(this).find('img.abajo').stop().animate({top:290},1000);
+		$(this).find('div').stop().animate({
+			transform:'scale(1.5)'},1000);
+	});
+	$('#trabajos div').mouseleave(function(){ 
+		$(this).find('img.arriba').stop().animate({top:0},1000);
+		$(this).find('img.abajo').stop().animate({top:0},1000);
+		$(this).find('div').stop().animate({
+			transform:'scale(1)'},1000);
+	});
+		
+//trabajos contenido 3-4
+
+	$('#trabajos .contenido_3').mouseenter(function(){ 
+		$(this).find('div').stop().animate({
+			transform:'rotate(-20deg) scale(1.5)'});
+	});
+	$('#trabajos div').mouseleave(function(){ 
+		$(this).find('div').stop().animate({
+			transform:'scale(1)'},1000);
+	});
+
+//redes sociales
+
+	$('.rrss img').mouseenter( function(){
+		$(this).stop().animate({ opacity:1, top:-15})
+	});
+	$('.rrss img').mouseleave( function(){
+		$(this).stop().animate({ opacity:0.2, top:0})
+	});
+
+});
+
+
+
+</script>
+</head>
+
+<body>
+
+<!--header-->
+    <header>
+    	<div class="menu">
+        	<a href="index.html">
+                <div class="logo">
+                    <img src="imagenes/Logo-Vicky-Otero_imaginacion.png"/>
+                </div>
+            </a>
+            <a href="mailto:vicky.vickyotero@gmail.com">
+                <div class="contacto" title="vicky.vickyotero@gmail.com">
+                    <span>CONTACTO</span>
+                </div>
+            </a>
+        </div>
+    </header>
+    
+
+<!--CONTENEDOR-->
+<div id="contenedor">
+ <!--#col_izda-->   
+    <div id="col_izda">
+    	<img src="imagenes/vicky_otero.jpg"/>
+        
+    </div>
+<!--#col_dcha-->
+    <div id="col_dcha">
+    	<h1>VICKY OTERO</h1>
+        <div>
+            <p><strong>Diseñadora Gráfica</strong> y <strong>Desarrolladora web</strong>, pero sobre todo <strong><em>"CURIOSA"</em></strong> </p><br/>
+            <p>Hace tiempo leí una frase de José Saramago que dice: </p><br/>
+            <p><strong><em>"La vejez empieza cuando se pierde la curiosidad"</em></strong></p><br/>
+            <p>Y desde entonces he incluido en mi Curriculum este título el de "CURIOSA" por encima del resto, porque lo considero mucho más importante. Creo que cualquiera que tenga curiosidad puede Aprender y Emprender (palabra que está tan de moda ahora) lo que quiera, todo aquello que se proponga. </p>
+        </div>
+        <div class="cv" title="cv_vicky otero.pdf">
+        	<a href="CVicky/VickyOtero.html">
+        	<em>Curriculum Vitae</em>
+            </a>
+        </div>
+   </div>
+<!--#contenido-->
+    <div id="medio" class="medio">
+        <p class="actitudes">aCtitudes</p>
+        <p class="aptitudes">aPtitudes</p>
+    </div>
+    <div id="ancla">
+    </div>
+
+	<div id="trabajos">
+        <div class="contenido_1">
+            	<img class="arriba" src="imagenes/imaginacion_.jpg"/>
+            	<img class="abajo" src="imagenes/imaginacion_.jpg"/>
+					<a href="imaginacion.html">
+                    <div class="imaginacion">
+                    	<h1>imaginación</h1>
+                    </div>
+                    </a>
+   		</div>
+        
+        <div class="contenido_1">
+            	<img class="arriba" src="imagenes/constancia_.jpg"/>
+            	<img class="abajo" src="imagenes/constancia_.jpg"/>
+					<a href="constancia.html">
+                    <div class="constancia">
+                        <h1>constancia</h1>
+                    </div>
+                    </a>
+        
+        </div>
+        <div class="contenido_3">
+	       	<a href="diseno_grafico.html">
+            	<div class="diseno">
+	        	<p>diseño</p>
+                </div>
+            </a>
+        </div>
+        <div class="contenido_3">
+	       	<a href="web.html">
+            	<div class="web">
+	        	<p>web</p>
+                </div>
+            </a>
+        </div>
+        <div class="contenido_1">
+            <img class="arriba" src="imagenes/comunicacion_.jpg"/>
+            <img class="abajo" src="imagenes/comunicacion_.jpg"/>
+                <a href="comunicacion.html">
+                <div class="comunicacion">
+                <h1>comunicación</h1>
+                </div>
+                </a>
+        </div>
+        <div class="contenido_1">
+            <img class="arriba" src="imagenes/optimismo_.jpg"/>
+            <img class="abajo" src="imagenes/optimismo_.jpg"/>
+                <a href="optimismo.html">
+                <div class="optimismo">
+                <h1>optimismo</h1>
+                </div>
+                </a>
+        </div>
+    </div> 
+    
+</div>
+<!--FIN #contenedor-->
+    <footer>
+	    <p> © Vicky Otero</p>
+        <div class="rrss">
+            <a href="https://www.facebook.com/vicky.o.rodriguez" target="new"><img src="imagenes/facebook.gif" /></a>
+            <a href="https://twitter.com/oterovicky" target="new"><img src="imagenes/twitter.gif" /></a>
+            <a href="https://www.linkedin.com/profile/view?id=175232208&trk=nav_responsive_tab_profile" target="new"><img src="imagenes/linkedin.gif" /></a>
+        </div>
+    </footer>
+<div id=cookies>
+"LA WEB XXXXX" utiliza cookies propias y de terceros para su funcionamiento,para mantener la sesión y personalizar la experiencia del usuario, así como para obtener estadísticas anónimas de uso de la web.<a href="politica-cookies.html" target="new">POLÍTICA DE COOKIES</a>
+<input type="button" id="cerrar-aviso" value="CERRAR"/>
+</div>
+
+</body>
+</html>

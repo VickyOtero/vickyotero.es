@@ -1,0 +1,65 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Comunicacion</title>
+<link rel="shortcut icon" href="imagenes/Logo-Vicky-Otero_favicon.png"/>
+<link href="comunicacion_style.css" rel="stylesheet" type="text/css" />
+<script src="jquery.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-52526153-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script>
+	$(document).ready(function() {
+		
+$('.desplegable div').mouseenter(function(){
+	$('.desplegable div').stop().animate({width:200});
+	$(this).stop().animate({width:480});
+});
+
+	});
+
+</script>
+</head>
+
+<body>
+	<!--header-->
+    <header>
+        	<a href="index.html#ancla">
+        	<div class="logo">
+                <img src="imagenes/Logo-Vicky-Otero_imaginacion.png"/>
+            </div>
+            </a>
+            <div class="title">
+				<!--<img src="imagenes/comunicacion_cabecera.png"/>-->
+            </div>
+            <a href="index.html#formulario_contacto">
+                <div class="contacto" title="vicky.vickyotero@gmail.com">
+                    <span>CONTACTO</span>
+                </div>
+            </a>
+    </header>
+    
+    <!--contenedor-->
+<div id="contenedor">
+	<div class="blog">
+       <a href="http://loscuentospiratas.wordpress.com/"><img src="imagenes/blog_cuentos_vicky_otero.jpg"/></a>
+    </div>
+   <div id="autor">
+        <h3>Una imagen implementada con palabras, da la oportunidad de transmitir de forma explícita aquello que queremos comunicar</h3>
+<a href="http://loscuentospiratas.wordpress.com/"><h1>Los Cuentos de los Piratas</h1></a>
+        <h3>Mi blog, donde podrás descubrir aquello que intento decir.</h3> <h4>Entra y lee todos mis cuentos y microrrelatos; porque si te gustan puedes tener el tuyo propio .... cuenta conmigo.</h4> 
+   </div>
+</div>
+
+
+
+</body>
+</html>
